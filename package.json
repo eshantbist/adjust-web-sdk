@@ -1,0 +1,22 @@
+{
+  "name": "adjust-web-sdk",
+  "version": "0.1.0",
+  "description": "This is the guide to the Javascript SDK of Adjust™ for web apps. You can read more about Adjust™ at [adjust.com].",
+  "main": "dist/adjust.js",
+  "scripts": {
+    "build": "./node_modules/.bin/uglifyjs ./dist/adjust.js -c -o ./dist/adjust.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALeutsky/adjust-web-sdk.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ALeutsky/adjust-web-sdk/issues"
+  },
+  "homepage": "https://github.com/ALeutsky/adjust-web-sdk#readme",
+  "devDependencies": {
+    "uglify-js": "^3.4.9"
+  }
+}

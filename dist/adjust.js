@@ -1,4 +1,4 @@
-(function (window) {
+(function (global) {
   'use strict';
 
   function sendRequest(method, url, data, success_cb, error_cb) {
@@ -53,7 +53,7 @@
     sendRequest = function () {}
   }
 
-  window.Adjust = function Adjust(options) {
+  function Adjust(options) {
 
     options = options || {};
 
@@ -139,4 +139,9 @@
 
   }
 
-})(window);
+  if ( typeof module === 'object' && typeof module.exports === 'object') {
+    module.exports = Adjust;
+  } else {
+    global.Adjust = Adjust;
+  }
+})(this);

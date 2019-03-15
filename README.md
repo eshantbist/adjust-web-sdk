@@ -186,7 +186,7 @@ SOFTWARE.
 
 [adjust.com]:   https://adjust.com
 [dashboard]:    http://adjust.com
-[example-app]:  index.js
+[example-app]:  demo/index.js
 
 [callbacks-guide]:      https://docs.adjust.com/en/callbacks
 [special-partners]:     https://docs.adjust.com/en/special-partners
