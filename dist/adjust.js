@@ -49,7 +49,7 @@
     return copy
   }
 
-  if (!'withCredentials' in new XMLHttpRequest()) {
+  if (!(typeof XMLHttpRequest !== 'undefined' && 'withCredentials' in new XMLHttpRequest())) {
     sendRequest = function () {}
   }
 
