@@ -18,7 +18,9 @@
     };
 
     if (!!error_cb) {
-      req.onerror = error_cb
+      req.onerror = function (error) {
+        error_cb(error, req);
+      }
     }
 
     req.send(data)
